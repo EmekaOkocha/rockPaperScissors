@@ -16,7 +16,7 @@ if ((usersInput == "R") or (usersInput == "P") or (usersInput == "S") ):
 else:
             print("Wrong input, Please choose R, P or S")
 playAgain =input("Would you like to play again? Y/N")
-for(count < 5, count == 0, count ++):
+while(count < 5):
     if(playAgain == "Y"):
         usersInput = input("Make a selection: R, P, S: ")
 if ((usersInput == "R") or (usersInput == "P") or (usersInput == "S") ):
