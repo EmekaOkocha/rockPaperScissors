@@ -1,14 +1,30 @@
 import random
 
-rock = "Rock"
-paper = "Paper"
-Scissors = "Scissors"
+R = "Rock"
+P = "Paper"
+S = "Scissors"
+count = 0
 comp1 = ["R","P","S"]
 player1 = ["R","P","S"]
 comp = random.choice(comp1)
 usersInput = input("Make a selection: R, P, S: ")
-if (usersInput != rock or usersInput != paper or usersInput!= Scissors):
-    print("Oops!!! Invalid Selection.Kindly choose R, P, or S.")
+if ((usersInput == "R") or (usersInput == "P") or (usersInput == "S") ):
+    if(comp == usersInput):
+        print("Oops!!! There is a tie. Play again")
+    else:
+            print("Computer chose: " + comp +" And User chose: "+ usersInput)
 else:
-        if comp != usersInput:
-            print("we have a winner, your selection is: "+ " " + usersInput + "computer chose: "+ comp)
+            print("Wrong input, Please choose R, P or S")
+playAgain =input("Would you like to play again? Y/N")
+for(count < 5, count == 0, count ++):
+    if(playAgain == "Y"):
+        usersInput = input("Make a selection: R, P, S: ")
+if ((usersInput == "R") or (usersInput == "P") or (usersInput == "S") ):
+    if(comp == usersInput):
+        print("Oops!!! There is a tie. Play again")
+    else:
+            print("Computer chose: " + comp +" And User chose: "+ usersInput)
+else:
+            print("Wrong input, Please choose R, P or S")
+count +1
+playAgain =input("Would you like to play again? Y/N")
