@@ -22,6 +22,7 @@ def PlayGame():
     if ((usersInput == "r") or (usersInput == "p") or (usersInput == "s") ):
         if(comp == usersInput):
             print("Oops!!! There is a tie. Play again")
+            PlayAgain()
         else:
             print("Computer chose: " + comp +" And User chose: "+ usersInput)
             PlayAgain()
